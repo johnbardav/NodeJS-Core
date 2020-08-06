@@ -3,8 +3,6 @@ Install NodeJS
 
 Install Nodemon (Cambios en tiempo de ejecución)
     npm install -g nodemon
-    nodemon 03-bases-node/app.js --base=4
-node 03-bases-node/app.js --base=4
 
 Declaración de variables con:
 var name -> se puede declarar e inicializar varias veces
@@ -35,16 +33,25 @@ let name -> solo se crea, inicializa una sola vez, pero su valor se puede asigna
 Nota: process.argv contiene los parametros por defecto que se envian en el llamado por consola de una archivo js.
 
 Para crear el package.json e iniciar node
-> npm init
+> `npm init`
+
+Instalar paquetes del package.json
+> `npm install`
 
 El paquete 'yargs' me permite recibir parametros de entrada, definir ayudas y capturar los parametros especificamente por nombre
-> npm install yargs --save (--save se usa para definir paquetes que son requeridos)
+> `npm install yargs --save` (--save se usa para definir paquetes que son requeridos)
 
 Instalar un paquete
-> npm install --save-dev nodemon (--save-dev se usa para definir paquetes que son requeridos solo para el desarrollo)
-> npm install yargs --save (--save se usa para definir paquetes que son requeridos)
+> `npm install --save-dev nodemon` (--save-dev se usa para definir paquetes que son requeridos solo para el desarrollo)
+> `npm install yargs --save` (--save se usa para definir paquetes que son requeridos)
 
 Desinstalar un paquete
-> npm uninstall nodemon
+> `npm uninstall nodemon`
 
 NOTA: Nunca subir el node_modules a un repositorio, usar un .gitignore
+
+###### Run the exercise 3
+> `cd 03-bases-node/`
+> `npm install`
+> `node app create --base 50 --limit 50`
+> `node app list --base 50 --limit 50`
