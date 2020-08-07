@@ -78,7 +78,7 @@ node app create --base 50 --limit 50
 node app list --base 50 --limit 50
 ```
 
-## ToDo (04-Todo)
+## To-Do (04-ToDo)
 
 ```
 # Iniciamos un proyecto de NodeJS e instalamos todas las dependencias
@@ -89,4 +89,16 @@ node app crear -d "Comer"
 node app listar
 node app actualizar -d "Comer" -c true
 node app borrar -d "Comer"
+```
+
+## Clima Mundo (05-clima-mundo)
+
+```
+# Iniciamos un proyecto de NodeJS e instalamos todas las dependencias
+npm install
+
+# Registrarse para obtener API key
+https://rapidapi.com/dev132/api/city-geo-location-lookup
+
+# Ejecutamos la aplicación
 ```
